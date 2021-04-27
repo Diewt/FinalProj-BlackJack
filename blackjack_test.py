@@ -22,7 +22,7 @@ class TestDeck(unittest.TestCase):
         deck.draw()
         test = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 
-        self.assertNotEqual(test, deck.CardCount)
+        self.assertEqual(test, deck.CardCount)
 
     # Test if function returns a value and not null
     def test_total_cards_returns_value(self):
